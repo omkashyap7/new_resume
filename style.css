@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    padding: 10px 10%;
+}
+header{
+    /* border: 2px solid red; */
+    top: 0;
+    width: 100%;
+}
+header img{
+    max-width: 100%;
+    width: 300px;
+    
+}
+/* part 2 */
+.second__container{
+    
+    width: 100%;
+    top: 14.5rem;
+    /* position: absolute; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+.section1__content h1{
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+/* part 3 */
+.third__content{
+    /* border: 2px solid green; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: start;
+
+}
+.personal__profile{
+    list-style: none;
+}
+.third__content h1{
+    margin-bottom: 1rem;
+}
+
+/* part 4 */
+.fourth__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.fourth__container h1{
+    margin-bottom: 1rem;
+}
+.education span{
+    font-weight: bold;
+    font-size: 1rem;
+}
+/* part 5 */
+.project__content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    
+}
+.lang li{
+    list-style: none;
+}
+.project__content h1{
+    margin-bottom: 1rem;
+}
+.project span{
+    font-weight: bold;
+}
+.project li{
+    list-style: none;
+    margin-top: 1rem;
+    
+}
+.project a{
+    text-decoration: none;
+}
+.project i{
+    font-size: 25px;
+}
+.photo{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.photo img{
+    max-width: 100%;
+    width: 50px;
+    height: auto;
+    border-radius: 100%;
+    
+    
+}
+/* responsive */
+@media screen and (max-width: 750px) {
+    .second__container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .section1__content h1{
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    .third__content{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .fourth__container{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    .project__content{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+}
